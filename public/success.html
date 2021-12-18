@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"href="frontend/libraries/bootstrapt/css/bootstrap.css">
+
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&
+    family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+                <a href="index.html" class="navbar-brand">
+                    <img src="frontend/images2/logo.png" alt="">
+                </a>
+            </div>
+            <ul class="navbar-nav mr-auto d-none d-lg-block">
+                <li>
+                    <span class="text-muted">
+                        | &nbsp; Melayani Setulus Hati, Memberikan Yang Terbaik
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    
+
+    <script src="frontend/libraries/jquery/jquery-3.5.1.min.js"></script>
+    <script src="frontend/libraries/bootstrapt/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script> 
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomwidth: 500,
+                tittle: false,
+                tint: '#333',
+                Xoffset: 15
+            });
+
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="frontend/images/ic_doe.png"/>'
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
